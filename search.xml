@@ -13,14 +13,18 @@
       
       <categories>
           
-          <category> /博客 </category>
+          <category> 博客 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 学习,博客,GitHub </tag>
+            <tag> 博客 </tag>
+            
+            <tag> 学习 </tag>
+            
+            <tag> GitHub </tag>
             
         </tags>
       
@@ -70,7 +74,9 @@
       
         <tags>
             
-            <tag> 生活,博客 </tag>
+            <tag> 生活 </tag>
+            
+            <tag> 博客 </tag>
             
         </tags>
       
