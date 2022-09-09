@@ -8,9 +8,25 @@
       <link href="/2022/09/09/bert/"/>
       <url>/2022/09/09/bert/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="什么是Bert？"><a href="#什么是Bert？" class="headerlink" title="什么是Bert？"></a>什么是Bert？</h1><p>BERT（Bidirectional Encoder Representations from Transformers） 是一个语言表示模型(language representation model)。它的主要模型结构是trasnformer的encoder堆叠而成，它的框架分为两个步骤：pretraining和fine-tuning。</p><h1 id="Bert可以做什么？"><a href="#Bert可以做什么？" class="headerlink" title="Bert可以做什么？"></a>Bert可以做什么？</h1><p>首先结论是：Bert有分词输出和序列最后一层hidden的输出。因此Bert的应用在分类任务、回归任务和序列任务中。其中回归任务是一种特殊的分类，只不过它的输出是一个数值而非一个概率。序列任务有命名实体识别(NER)，SQuAD。</p><p>Bert的这种预训练模型使得模型只需要少数的训练数据即可得到优秀的效果。</p><h1 id="Bert模型"><a href="#Bert模型" class="headerlink" title="Bert模型"></a>Bert模型</h1><p>简单来讲Bert分为：输入层，中间层，输出层。</p><h2 id="输入层"><a href="#输入层" class="headerlink" title="输入层"></a>输入层</h2><p><img src="1.png"><br>可以看到输入为三个embedding相加。</p><h2 id="中间层"><a href="#中间层" class="headerlink" title="中间层"></a>中间层</h2><p>中间层类似于transformer的encoder<br><img src="2.png"></p><h2 id="输出层"><a href="#输出层" class="headerlink" title="输出层"></a>输出层</h2><p>每一个输入对应一个输出，根据我们的不同任务来选择具体的输出。</p><h2 id="Pretraining＋fine-tuning"><a href="#Pretraining＋fine-tuning" class="headerlink" title="Pretraining＋fine-tuning"></a>Pretraining＋fine-tuning</h2><p>我们已经知道Bert的两阶段工作性质了，那么它具体如何工作呢？</p><p><strong>- Pretraining</strong><br>      模型的预训练采用大量的预训练数据，进行unsupervised learning。<br>      Bert采用了MLM的方法：mask language model，随机mask输入的词，由于fine-tuning时       没有mask的token，因此：<br>      1. 80%替换为MASK<br>      2. 10%替换为随机token<br>      3. 10%不变<br><strong>- fine-tuning</strong><br>       在fine-tuning阶段可以简单的选择特定的输入和输出进行训练，如：<br>       - 2句子 pairs： 相似度任务,<br>       - 假设-前提 pairs： 推理任务,<br>       - 问题-文章 pairs ： QA任务</p><hr>]]></content>
       
       
+      <categories>
+          
+          <category> Pretrain model </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> NLP </tag>
+            
+            <tag> Pretrain </tag>
+            
+            <tag> Bert </tag>
+            
+        </tags>
       
     </entry>
     
