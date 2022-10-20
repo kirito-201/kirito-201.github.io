@@ -17,6 +17,9 @@ http://kirito201.com/tags/Bert/
 http://kirito201.com/tags/Prompt-Learning/
 http://kirito201.com/tags/Hexo/
 http://kirito201.com/tags/GitHub/
+http://kirito201.com/tags/NER/
+http://kirito201.com/tags/Discontinuous/
 http://kirito201.com/categories/%E7%94%9F%E6%B4%BB/
 http://kirito201.com/categories/Pretrain-model/
 http://kirito201.com/categories/%E5%8D%9A%E5%AE%A2/
+http://kirito201.com/categories/Discontinuous-NER/
