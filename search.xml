@@ -4,6 +4,61 @@
   
     
     <entry>
+      <title>Unified NER as W2W Relation Classification</title>
+      <link href="/2022/11/07/unified-ner-as-w2w-relation-classification/"/>
+      <url>/2022/11/07/unified-ner-as-w2w-relation-classification/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Rethinking Boundaries</title>
+      <link href="/2022/11/07/rethinking-boundaries/"/>
+      <url>/2022/11/07/rethinking-boundaries/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>A Span-Based Model for Joint Overlapped and Discontinuous NER</title>
+      <link href="/2022/11/07/a-span-based-model-for-joint-overlapped-and-discontinuous-ner/"/>
+      <url>/2022/11/07/a-span-based-model-for-joint-overlapped-and-discontinuous-ner/</url>
+      
+        <content type="html"><![CDATA[<h1 id="基于span的联合重叠不连续命名实体识别模型"><a href="#基于span的联合重叠不连续命名实体识别模型" class="headerlink" title="基于span的联合重叠不连续命名实体识别模型"></a>基于span的联合重叠不连续命名实体识别模型</h1><p>原文：A Span-Based Model for Joint Overlapped and Discontinuous Named Entity Recognition</p><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><ul><li>提出一种基于span的模型同时识别不连续和重叠实体</li><li>遍历所有可能文本跨度识别实体片段——解决重叠问题</li><li>通过关系分类判断一对实体段是重叠还是连续的，这样在识别不连续的同时再次检查重叠实体</li><li>本质上是关系提取范式</li></ul><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>相对于目前关注不连续和重叠问题NER的一些模型(如基于过渡)，需要定义图节点、边和转换操作，并且由于模型沿着句子中的单词逐渐生成结果，这样就会产生错误传播。相对来说，基于span的方法是更加简单的，并且<strong>span-level</strong>的分类是完全<strong>并行化</strong>的，不会产生错误传播。</p><p>提出基于span的端对端的同时识别重叠和不连续实体方法。</p><ul><li>使用Bert生成上下文表示，并枚举所有候选span，对这些span分类是否为实体片段；</li><li>构造分类预测器确定俩个片段是否存在关系；</li><li>定义了两种关系：Overlapping 、 Succession分别表示重叠和不连续实体；</li><li>使用依赖导向的图卷积网络提供语法信息，增强模型</li></ul><h2 id="Related-Work"><a href="#Related-Work" class="headerlink" title="Related Work"></a>Related Work</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Discontinuous NER </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> NLP </tag>
+            
+            <tag> NER </tag>
+            
+            <tag> Discontinuous </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>极大团查找做不连续NER</title>
       <link href="/2022/10/25/ji-da-tuan-cha-zhao-zuo-bu-lian-xu-ner/"/>
       <url>/2022/10/25/ji-da-tuan-cha-zhao-zuo-bu-lian-xu-ner/</url>
